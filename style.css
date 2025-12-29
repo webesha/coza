@@ -5,12 +5,17 @@ html, body {
     height: 100%;
 }
 
-
+:root{
+    font-size: 16px;
+}
+html{
+    font-size: 100%;
+}
 .dropdown-toggle::after {
     display: none;
 }
 
-.nav-icon { color: #000;  text-decoration: none;  transition: color 0.3s; font-size: 20px;
+.nav-icon { color: #000;  text-decoration: none;  transition: color 0.3s; font-size: 1.25rem;
 }
 
 .nav-icon:hover {   color: #0d6efd; cursor: pointer;
@@ -19,7 +24,7 @@ html, body {
 .navbar .nav-link,
  .navbar-brand {
     color: black;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .navbar .nav-link:hover {
@@ -100,8 +105,25 @@ margin: 0;
 flex-wrap: wrap;
 }
 
+.products-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+@media (max-width:768px){
 
 
+.first-products-section{
+    padding: 60px 0 30px 0;
+    background-color: #fff;
+}
+.three-product{
+    gap:20px;
+}
+}
 .product-overview {
     margin: 50px 0 30px 0;
 }
@@ -165,24 +187,20 @@ flex-wrap: wrap;
 /* 12 products*/
 
 .about-main{
-  display: flex;
-flex-direction: row;
-gap: 30px;
-justify-content: center;
-align-items: center;
-margin-top: 0;
-padding-top: 40px;
-flex-wrap: wrap;
+padding: 0;
+margin: 0;
 
 }
 
         .card:hover{
-            transform: scale(1.10);
+            transform: scale(1.05);
             color: blue;
+            box-shadow: none;
         }
         .card{
             transition: all 0.3s;
             text-align: center;
+            margin-bottom: 20px;
            
         }
         .card-img-fixed {
@@ -228,6 +246,10 @@ flex-wrap: wrap;
     .products-grid .product-card img {
         height: 180px;
     }
+}
+.all-products-section{
+    padding: 30px 0 60px 0;
+    
 }
 
 /* Load More Button */
